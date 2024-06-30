@@ -64,9 +64,9 @@ I aspire to become a Front-end developer because I enjoy creating new things and
 
 ## Experience
 ### Academic Projects
-- **Omnifood**: [GitHub Repository](https://github.com/radomskaia/omnifood)
+- **Omnifood**: [GitHub Repository](https://github.com/radomskaia/omnifood) [Demo](https://omnifood-aradomskaia.netlify.app/)
   - Technologies: HTML, CSS
-- **Natours**: [GitHub Repository](https://github.com/radomskaia/natours)
+- **Natours**: [GitHub Repository](https://github.com/radomskaia/natours) [Demo](https://natours-aradomskaia.netlify.app/)
   - Technologies: HTML, Sass
 
 ## Education
