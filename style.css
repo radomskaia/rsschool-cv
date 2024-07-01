@@ -11,3 +11,23 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+
+.header {
+    max-width: 140rem;
+    margin: 10rem auto;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+.cv-name {
+    font-family: sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.cv-photo {
+    width: auto;
+    height: 15rem;
+    border-radius: 3rem;
+    box-shadow: 0 1.5rem 3rem 0 rgba(0, 0, 0, 0.2);
+}
