@@ -59,9 +59,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.header {
-    max-width: 140rem;
-    margin: 10rem auto;
 body {
     position: relative;
     font-family: Rosarivo, serif;
@@ -80,6 +77,17 @@ body {
     margin: 0 auto;
     padding: 3.2rem;
 }
+
+/**********************/
+/* GENERAL COMPONENTS */
+/**********************/
+.heading-primary {
+    font-family: 'Bona Nova SC', serif;
+    font-size: 7.4rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
 
 /******************/
 /* HEADER SECTION */
@@ -111,10 +119,6 @@ body {
 
 }
 
-.cv-photo {
-    width: auto;
-    height: 15rem;
-    border-radius: 3rem;
 .nav-link:link,
 .nav-link:visited {
     display: inline-block;
@@ -133,5 +137,44 @@ body {
     transform: scale(1.05);
 }
 
-    box-shadow: 0 1.5rem 3rem 0 rgba(0, 0, 0, 0.2);
+/******************/
+/* HERO SECTION */
+/******************/
+.hero-section {
+    margin: 12.8rem 0 4.8rem 0;
 }
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6.4rem;
+
+}
+
+.img-box {
+    height: 25rem;
+    border-radius: 25px;
+    border: 3px solid var(--shade-color);
+    box-shadow: 0 1.5rem 3rem 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.cv-photo {
+    height: 100%;
+    width: auto;
+    transition: transform .2s;
+}
+
+.cv-photo:hover {
+    transform: scale(1.15);
+}
+
+.text-box {
+    font-size: 3.0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    transform: translateY(-30%);
+}
+
