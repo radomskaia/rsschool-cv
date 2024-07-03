@@ -151,6 +151,7 @@ body {
 /****************/
 .hero-section {
     margin: 12.8rem 0 4.8rem 0;
+    height: 50rem;
 }
 
 .hero {
@@ -182,5 +183,14 @@ body {
     flex-direction: column;
     gap: 2.4rem;
     transform: translateY(-30%);
+    letter-spacing: 1.5px;
 }
 
+
+.icon {
+    display: inline-block;
+    width: 3.2rem;
+    height: 3.2rem;
+
+    fill: var(--shade-color);
+}
