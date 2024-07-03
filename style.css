@@ -83,12 +83,35 @@ body {
     flex-wrap: wrap;
 }
 
-.flex--center {
+.flex__column {
+    flex-direction: column;
+}
+
+.flex__center {
     align-items: center;
     justify-content: center;
 }
 
+.flex__gap-sm {
+    gap: 1.2rem;
+}
 
+.flex__gap-md {
+    gap: 2.4rem;
+}
+
+.flex__gap-bg {
+    gap: 6.4rem;
+}
+
+.flex__gap-lg {
+    gap: 9.6rem;
+}
+
+
+.list__none {
+    list-style: none;
+}
 /**********************/
 /* GENERAL COMPONENTS */
 /**********************/
@@ -134,7 +157,6 @@ body {
 }
 
 .nav-list {
-    list-style: none;
     align-items: center;
     justify-content: space-around;
     font-size: 2.4rem;
@@ -167,11 +189,6 @@ body {
     height: 50rem;
 }
 
-.hero {
-    gap: 6.4rem;
-
-}
-
 .img-box {
     height: 25rem;
     border-radius: 25px;
@@ -192,9 +209,6 @@ body {
 
 .text-box {
     font-size: 3.0rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
     transform: translateY(-30%);
     letter-spacing: 1.5px;
 }
@@ -224,21 +238,9 @@ body {
     color: var(--shade-color);
     line-height: 2;
     border-radius: 9px;
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
-}
-
-.contacts-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
 }
 
 .contacts-item {
-    display: flex;
-    gap: 1rem;
     align-items: center;
 }
 
@@ -265,7 +267,7 @@ body {
     display: flex;
     align-items: center;
     padding: 3px;
-     border-radius: 50%;
+    border-radius: 50%;
     border: transparent solid 5px;
 }
 
