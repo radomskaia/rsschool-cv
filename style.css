@@ -92,11 +92,24 @@ body {
 /**********************/
 /* GENERAL COMPONENTS */
 /**********************/
-.heading-primary {
+.heading-primary,
+.heading-secondary {
     font-family: 'Bona Nova SC', serif;
-    font-size: 7.4rem;
-    font-weight: 700;
+
+}
+
+.heading-primary {
+    font-size: 6.2rem;
     letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.heading-secondary {
+    font-size: 3.6rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-align: center;
+
 }
 
 
@@ -185,6 +198,98 @@ body {
     transform: translateY(-30%);
     letter-spacing: 1.5px;
 }
+
+/*****************/
+/* ABOUT SECTION */
+/*****************/
+.about-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.35)), url("assets/img/bg-about.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4.8rem 0;
+    font-size: 1.8rem;
+    letter-spacing: .5px;
+}
+
+.about {
+    justify-content: space-between;
+}
+
+.about-card {
+    width: 47%;
+    padding: 4.8rem;
+    background-color: rgba(248, 237, 227, 0.75);
+    color: var(--shade-color);
+    line-height: 2;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.contacts-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.contacts-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contacts-link:link,
+.contacts-link:visited {
+    width: 8rem;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+
+}
+
+.contacts-link:link,
+.contacts-link:visited,
+.icon-link:link,
+.icon-link:visited,
+.contacts-item p {
+    line-height: 1;
+    transition: all 0.2s;
+}
+
+.icon-link:link,
+.icon-link:visited {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+     border-radius: 50%;
+    border: transparent solid 5px;
+}
+
+.contacts-item p {
+    margin-left: 1.6rem;
+}
+
+.contacts-link:hover,
+.icon-link:hover {
+    color: #0d1410;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+.icon-link:hover {
+    border: #4e765f solid 5px;
+}
+
+.contacts-link:active,
+.icon-link:active {
+    transform: scale(1.05);
+}
+
+
 
 
 .icon {
