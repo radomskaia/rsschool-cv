@@ -44,6 +44,12 @@ SPACING SYSTEM (px)
     padding: 0;
 }
 
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.5rem rgba(130, 197, 159, 1);
+    border-radius: 9px;
+}
+
 :root {
     --bg-color: #F8EDE3;
     --tint-bg-color: #c6beb6;
@@ -111,6 +117,10 @@ body {
 
 .list__none {
     list-style: none;
+}
+
+.margin__bottom-bg {
+    margin-bottom: 6.4rem;
 }
 /**********************/
 /* GENERAL COMPONENTS */
@@ -243,9 +253,9 @@ body {
 /*****************/
 .about-section {
     background-image: linear-gradient(to bottom,
-                        rgba(0, 0, 0, 0.35) 80%,
-                        rgba(248, 237, 227, 1)),
-                        url("assets/img/bg-about.jpg");
+    rgba(0, 0, 0, 0.35) 80%,
+    rgba(248, 237, 227, 1)),
+    url("assets/img/bg-about.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -338,7 +348,7 @@ body {
 
 .lang-box {
     padding: 2.4rem;
-    width: 35rem;
+    transform: translateX(-4%);
 }
 
 .flag {
@@ -350,3 +360,91 @@ body {
 .spoken-lang {
     line-height: 1.5;
 }
+
+/********************/
+/* EXAMPLES SECTION */
+/********************/
+.skills-section .container {
+     transition: all .3s ease-out;
+}
+.examples-box {
+    /*max-width: 30%;*/
+    /*border-radius: 9px;*/
+    /*border: 2px solid var(--shade-color);*/
+    /*overflow: hidden;*/
+    /*font-size: 1.4rem;*/
+    /*line-height: 1.5;*/
+    /*box-shadow: 0 1.5rem 3rem 0 rgba(0, 0, 0, 0.2);*/
+    /*transition: all .3s ease-out;*/
+
+}
+
+.for_focus{
+    display: inline-block;
+    text-decoration: none;
+    max-width: 30%;
+    border-radius: 9px;
+    border: 2px solid var(--shade-color);
+    overflow: hidden;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    box-shadow: 0 1.5rem 3rem 0 rgba(0, 0, 0, 0.2);
+    transition: all .8s ease-in-out;
+}
+
+.for_focus:focus {
+    max-width: 100%;
+    width: 100%;
+    /*order: -1;*/
+}
+
+.prog-lang {
+    background-color: #d8dee9;
+    color: #2e3440;
+    padding: 1.5rem 2.4rem 1.2rem 2.4rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.code-box {
+    padding: 0 1rem;
+    background-color: #2e3440;
+    color: #d8dee9;
+    overflow: scroll;
+    height: 40rem;
+}
+
+.level1,
+.tag-level-2 {
+  color: #a2cd5a; /* цвет для атрибутов и ключевых слов */
+}
+
+.level2,
+.attribute {
+  color: #ec5f67; /* цвет для названий классов и mixin */
+}
+
+.level3,
+.tag-level-4 {
+  color: #f99157; /* цвет для значений, переменных */
+}
+
+.level4,
+.attribute_value {
+  color: #5fb3b3; /* цвет для свойств */
+}
+
+.level5,
+.tag-level-1 {
+  color: #6699cc; /* цвет для медиа-запросов */
+}
+
+.level6,
+.tag-level-3 {
+  color: #c594c5; /* цвет для контента внутри медиа-запросов */
+}
+
+.tag-level-5 {
+    color: #deb336;
+}
+
