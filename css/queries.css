@@ -1,0 +1,236 @@
+/*1115 px*/
+@media only screen and (max-width: 69.69em) {
+    .about-card {
+        padding: 3.2rem;
+        flex-basis: 43.5rem;
+    }
+
+    .about-card .contacts-item:last-child .text-btn {
+        min-width: auto;
+    }
+
+    .popup {
+        position: relative;
+        max-width: 70%;
+    }
+
+    .project-overview {
+            grid-template-columns: 1fr 2fr;
+        }
+
+    .overview-list .heading-tertiary {
+    text-align: center;}
+}
+
+    /*952 px*/
+    @media only screen and (max-width: 59.5em) {
+        .navigation {
+            width: 100%;
+        }
+
+        .for_focus {
+            max-width: 90%;
+            width: 90%;
+        }
+
+        .popup {
+            max-width: 80%;
+            max-height: 80vh;
+            overflow: scroll;
+        }
+    }
+
+    /*712 px*/
+    @media only screen and (max-width: 44.5em) {
+        html {
+            /*9 px*/
+            font-size: 56.25%;
+        }
+
+        .text-box {
+            text-align: center;
+        }
+
+        .overview-header {
+            justify-content: center;
+        }
+
+        .project-box {
+            max-width: 450px;
+            max-height: 380px;
+        }
+
+        .phone-preview {
+            transform: scale(.5) translate(0, -50%);
+        }
+
+        .laptop-preview {
+            width: 167.2rem;
+            height: 110.3rem;
+            transform: scale(.3) translate(-117%, -100%);
+        }
+
+        .school-item {
+            width: 60%;
+            gap: 3.2rem;
+        }
+
+        .school-item ul {
+            gap: 0;
+        }
+
+        .footer {
+            gap: 3.2rem;
+        }
+
+        .project-overview {
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 3.2rem;
+        }
+
+        .overview-list:nth-child(2) .overview-list2 {
+            flex-direction: row;
+            gap: 3.6rem;
+        }
+
+
+    }
+
+    /* 512px */
+    @media only screen and (max-width: 32em) {
+        .flex__gap-bg {
+            gap: 4.8rem;
+        }
+
+        .flex__gap-lg {
+            gap: 6.4rem;
+        }
+
+        .margin__bottom-bg {
+            gap: 4.8rem;
+        }
+
+        .text-box {
+            height: 100%;
+        }
+
+        .header-section {
+            height: 0;
+        }
+
+        .navigation {
+            display: none;
+        }
+
+        .mobile-navigation {
+            display: block;
+        }
+
+        .hero-section {
+            margin: 9.8rem 0 4.8rem 0;
+            height: 50rem;
+        }
+
+        .hero-section .container.flex {
+            gap: 9.6rem;
+        }
+
+        .for_focus {
+            max-width: 95%;
+            width: 95%;
+        }
+
+        .project-box {
+            max-width: 305px;
+            max-height: 300px;
+        }
+
+        .phone-preview {
+            transform: scale(.4) translate(-25%, -75%);
+        }
+
+        .laptop-preview {
+            width: 167.2rem;
+            height: 110.3rem;
+            transform: scale(.2) translate(-199%, -171%);
+        }
+
+        .school-item {
+            max-width: 95%;
+            width: 95%;
+        }
+
+        .education-section {
+            padding: 6.2rem 0;
+        }
+
+        .popup {
+            max-width: 90%;
+            max-height: 80vh;
+            overflow: scroll;
+            padding: 3.2rem;
+        }
+
+        .popup .icon {
+            width: 3.0rem;
+            height: 3.0rem;
+        }
+    }
+
+    /* 400px */
+    @media only screen and (max-width: 25em) {
+        html {
+            font-size: 50%;
+        }
+
+        .nickname {
+            display: none;
+        }
+
+        .about-card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .about-card ul {
+            align-self: center;
+        }
+
+        .project-box {
+            display: none;
+        }
+
+        .logo_icon:link svg,
+        .logo_icon:visited svg {
+            height: 3.2rem;
+        }
+
+        .footer {
+            gap: 2.4rem;
+        }
+
+        .popup {
+            max-height: 90vh;
+        }
+    }
+
+    @media (hover: none) {
+        .cv-photo:hover {
+            transform: scale(1);
+        }
+
+        .icon-link:hover {
+            transform: scale(1);
+        }
+
+        .text-btn:hover {
+            transform: scale(1);
+        }
+
+        .nav-link:hover {
+            transform: scale(1);
+        }
+    }
+
+
