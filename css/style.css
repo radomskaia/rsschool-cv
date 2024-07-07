@@ -739,7 +739,7 @@ body {
 
 .popup {
     position: relative;
-    max-width: 70%;
+    max-width: 60%;
     max-height: 70vh;
     background-image: linear-gradient(to right bottom, var(--tint-color), var(--bg-color));
     border-radius: 9px;
