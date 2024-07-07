@@ -98,6 +98,10 @@ body {
     justify-content: center;
 }
 
+.flex_align__center {
+    align-items: center;
+}
+
 .flex__gap-sm {
     gap: 1.2rem;
 }
@@ -114,13 +118,24 @@ body {
     gap: 9.6rem;
 }
 
-
 .list__none {
     list-style: none;
 }
 
 .margin__bottom-bg {
     margin-bottom: 6.4rem;
+}
+
+.margin__bottom-md {
+    margin-bottom: 2.4rem;
+}
+
+.margin__bottom-sm {
+    margin-bottom: 1.2rem;
+}
+
+.text-center {
+    text-align: center;
 }
 /**********************/
 /* GENERAL COMPONENTS */
@@ -141,7 +156,6 @@ body {
 .heading-secondary,
 .heading-tertiary {
     font-weight: 400;
-
 }
 
 .heading-secondary {
@@ -153,7 +167,6 @@ body {
 .heading-tertiary {
     font-size: 2.4rem;
     letter-spacing: 1px;
-    margin-bottom: 2.4rem;
 }
 
 .icon {
@@ -171,6 +184,20 @@ body {
     filter: brightness(90%);
 }
 
+.text-btn:link,
+.text-btn:visited {
+    min-width: 8rem;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+
+}
+
+.text-btn:link,
+.text-btn:visited {
+    line-height: 1;
+    transition: all 0.2s;
+}
 /******************/
 /* HEADER SECTION */
 /******************/
@@ -282,17 +309,6 @@ body {
     align-items: center;
 }
 
-.contacts-link:link,
-.contacts-link:visited {
-    width: 8rem;
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-
-}
-
-.contacts-link:link,
-.contacts-link:visited,
 .icon-link:link,
 .icon-link:visited,
 .contacts-item p {
@@ -313,7 +329,7 @@ body {
     margin-left: 1.6rem;
 }
 
-.contacts-link:hover,
+.text-btn:hover,
 .icon-link:hover {
     color: #0d1410;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -324,7 +340,7 @@ body {
     border: #4e765f solid 5px;
 }
 
-.contacts-link:active,
+.text-btn:active,
 .icon-link:active {
     transform: scale(1.05);
 }
@@ -365,21 +381,10 @@ body {
 /* EXAMPLES SECTION */
 /********************/
 .skills-section .container {
-     transition: all .3s ease-out;
-}
-.examples-box {
-    /*max-width: 30%;*/
-    /*border-radius: 9px;*/
-    /*border: 2px solid var(--shade-color);*/
-    /*overflow: hidden;*/
-    /*font-size: 1.4rem;*/
-    /*line-height: 1.5;*/
-    /*box-shadow: 0 1.5rem 3rem 0 rgba(0, 0, 0, 0.2);*/
-    /*transition: all .3s ease-out;*/
-
+    transition: all .3s ease-out;
 }
 
-.for_focus{
+.for_focus {
     display: inline-block;
     text-decoration: none;
     max-width: 30%;
@@ -395,7 +400,6 @@ body {
 .for_focus:focus {
     max-width: 100%;
     width: 100%;
-    /*order: -1;*/
 }
 
 .prog-lang {
@@ -414,34 +418,35 @@ body {
     height: 40rem;
 }
 
+/*Tags color*/
 .level1,
 .tag-level-2 {
-  color: #a2cd5a; /* цвет для атрибутов и ключевых слов */
+    color: #a2cd5a; /* цвет для атрибутов и ключевых слов */
 }
 
 .level2,
 .attribute {
-  color: #ec5f67; /* цвет для названий классов и mixin */
+    color: #ec5f67; /* цвет для названий классов и mixin */
 }
 
 .level3,
 .tag-level-4 {
-  color: #f99157; /* цвет для значений, переменных */
+    color: #f99157; /* цвет для значений, переменных */
 }
 
 .level4,
 .attribute_value {
-  color: #5fb3b3; /* цвет для свойств */
+    color: #5fb3b3; /* цвет для свойств */
 }
 
 .level5,
 .tag-level-1 {
-  color: #6699cc; /* цвет для медиа-запросов */
+    color: #6699cc; /* цвет для медиа-запросов */
 }
 
 .level6,
 .tag-level-3 {
-  color: #c594c5; /* цвет для контента внутри медиа-запросов */
+    color: #c594c5; /* цвет для контента внутри медиа-запросов */
 }
 
 .tag-level-5 {
