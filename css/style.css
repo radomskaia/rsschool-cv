@@ -68,7 +68,7 @@ html {
 body {
     position: relative;
     font-family: Rosarivo, serif;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 1;
     font-weight: 400;
     color: var(--shade-color);
@@ -124,6 +124,10 @@ body {
 
 .flex__gap-lg {
     gap: 9.6rem;
+}
+
+.flex__shrink {
+    flex: 1;
 }
 
 .list__none {
@@ -475,22 +479,16 @@ body {
     background-image: linear-gradient(to bottom,
     rgba(0, 0, 0, 0.35) 80%,
     rgba(248, 237, 227, 1)),
-    url("assets/img/bg-about.jpg");
+    url("../assets/img/bg-about.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 12.8rem 0 17.6rem 0;
-    font-size: 1.8rem;
     letter-spacing: .5px;
 }
 
-
-.about {
-    justify-content: space-between;
-}
-
 .about-card {
-    width: 47%;
+    max-width: 54rem;
     padding: 4.8rem;
     background-color: rgba(248, 237, 227, 0.75);
     color: var(--shade-color);
@@ -658,8 +656,8 @@ body {
 }
 
 .project-box {
-    max-width: 70rem;
-    max-height: 45rem;
+    max-width: 700px;
+    max-height: 450px;
     overflow: hidden;
 }
 
@@ -674,10 +672,10 @@ body {
 
 /*Phone*/
 .phone-preview {
-    background-image: url("assets/img/phone-preview.png");
+    background-image: url("../assets/img/phone-preview.png");
     background-size: cover;
-    width: 37.5rem;
-    height: 76rem;
+    width: 375px;
+    height: 760px;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -701,10 +699,10 @@ body {
 .laptop-preview {
     display: flex;
     justify-content: start;
-    background-image: url("assets/img/laptop-preview.png");
+    background-image: url("../assets/img/laptop-preview.png");
     background-size: cover;
-    width: 167.2rem;
-    height: 110.3rem;
+    width: 1672px;
+    height: 1103px;
     transform: scale(.4) translate(-74%, -73%);
 }
 
@@ -741,7 +739,7 @@ body {
 
 .popup {
     position: relative;
-    max-width: 50%;
+    max-width: 70%;
     max-height: 70vh;
     background-image: linear-gradient(to right bottom, var(--tint-color), var(--bg-color));
     border-radius: 9px;
@@ -798,11 +796,11 @@ body {
 }
 
 .school-item {
-    width: 35rem;
+    max-width: 35rem;
 }
 
 .school-item .text-btn {
-    line-height: 1.5;
+    line-height: 1.5
 }
 
 /**********/
@@ -810,7 +808,6 @@ body {
 /**********/
 
 .footer {
-    font-size: 1.8rem;
     height: 8rem;
     width: 100vw;
     background-color: var(--shade-color);
