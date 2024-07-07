@@ -306,6 +306,136 @@ body {
     transform: scale(1.05);
 }
 
+/*Mobile nav*/
+.mobile-navigation {
+    display: none;
+}
+
+.nav__checkbox {
+    display: none;
+}
+
+
+.nav__bg {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 888;
+    top: 3.5rem;
+    right: 3.5rem;
+    background-image: radial-gradient(var(--shade-color), var(--primary-color));
+    transition: all .8s cubic-bezier(.86, 0, .07, 1);
+}
+
+.mob_btn {
+    background-color: var(--shade-color);
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    box-shadow: 0 0 4rem 1.5rem rgba(0, 0, 0, .3);
+
+    position: fixed;
+    z-index: 999;
+    top: 3rem;
+    right: 3rem;
+
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav_icon {
+    position: relative;
+    margin-top: 3.4rem;
+}
+
+.nav_icon,
+.nav_icon::before,
+.nav_icon::after {
+    display: inline-block;
+    width: 3rem;
+    height: 1px;
+    background-color: var(--bg-color);
+    transition: all 0.2s ease;
+}
+
+.nav_icon::before,
+.nav_icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.nav_icon::before {
+    top: -.8rem;
+}
+
+.nav_icon::after {
+    top: .8rem;
+}
+
+.mobile-navigation:hover {
+    .nav_icon::before {
+        top: -1rem;
+    }
+
+    .nav_icon::after {
+        top: 1rem;
+    }
+}
+
+.mob-nav {
+    font-size: 2.4rem;
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 990;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all .8s cubic-bezier(.68, -.55, .265, 1.55);
+  }
+
+.mobile-nav-list {
+    gap: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .2s ease;
+    width: 100%;
+}
+
+.nav__checkbox:checked + .mob_btn .nav_icon {
+    background-color: transparent;
+  }
+
+  .nav__checkbox:checked + .mob_btn .nav_icon::before {
+    transform: rotate(135deg);
+    top: 0;
+  }
+
+  .nav__checkbox:checked + .mob_btn .nav_icon::after {
+    transform: rotate(-135deg);
+    top: 0;
+  }
+
+  .nav__checkbox:checked ~ .nav__bg,
+  .mob_btn:focus {
+    transform: scale(80);
+  }
+
+  .nav__checkbox:checked ~ .mob-nav {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    width: 100%;
+
+  }
+
+
 /****************/
 /* HERO SECTION */
 /****************/

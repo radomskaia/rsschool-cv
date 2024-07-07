@@ -40,6 +40,22 @@
             <li><a class="nav-link" href="#contacts">Contacts</a></li>
         </ul>
     </nav>
+    <div class="mobile-navigation">
+        <input class="nav__checkbox" type="checkbox" id="mob_btn">
+        <label class="mob_btn" for="mob_btn">
+            <span class="nav_icon">&nbsp;</span>
+        </label>
+        <div class="nav__bg">&nbsp;</div>
+        <nav class="mob-nav">
+            <ul class="mobile-nav-list list__none flex flex__column flex__center">
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#experience">Experience</a></li>
+                <li><a class="nav-link" href="#education">Education</a></li>
+                <li><a class="nav-link" href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main>
     <div class="hero-section flex flex__center">
@@ -848,5 +864,20 @@
         </svg>
     </a>
 </footer>
+<script>
+    // Получаем все элементы с классом nav-link
+    var links = document.querySelectorAll('.nav-link');
+
+    // Получаем чекбокс
+    var checkbox = document.getElementById('mob_btn');
+
+    // Для каждого элемента с классом nav-link добавляем обработчик события click
+    links.forEach(function (link) {
+        link.addEventListener('click', function () {
+            // Снимаем галочку с чекбокса
+            checkbox.checked = false;
+        });
+    });
+</script>
 </body>
 </html>
